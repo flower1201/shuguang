@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_5dp_while" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="36.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="#282828" android:layout_gravity="center" android:padding="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/location_hint" />
+        <TextView android:textSize="12.0sp" android:textColor="#282828" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="20.0dp" android:layout_marginRight="15.0dp" android:text="@string/location_hint_content" android:lineSpacingMultiplier="1.2" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginBottom="20.0dp">
+            <Button android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/tv_cancel" android:background="@drawable/shape_5dp_gray" android:layout_width="90.0dp" android:layout_height="36.0dp" android:text="@string/welcome_protocol_disagree" />
+            <Space android:layout_width="60.0dp" android:layout_height="match_parent" />
+            <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_agree" android:background="@drawable/shape_5dp_darkcyan" android:layout_width="90.0dp" android:layout_height="36.0dp" android:text="@string/welcome_protocol_agree" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

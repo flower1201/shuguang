@@ -1,3 +1,7 @@
 ﻿INSTALL-ME-shuguang.apk
 *.apk
 *.idsig
+apktool/build/
+apktool/dist/
+.DS_Store
+Thumbs.db

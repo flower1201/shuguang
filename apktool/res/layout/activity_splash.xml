@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- SplashActivity 会 findViewById(timer) 并更新文案；界面隐藏 -->
+    <TextView
+        android:id="@id/timer"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dp"
+        android:layout_marginRight="40.0dp"
+        android:text="跳过"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 保留 ImageView 类型，与 ActivitySplashBinding 强转一致；展示「世界那么大我想去看看」图 -->
+    <ImageView
+        android:id="@id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="36.0dp"
+        android:layout_marginRight="36.0dp"
+        android:contentDescription="@string/splash_slogan"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg_word"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,243:138"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42"
+        app:layout_constraintWidth_percent="0.82" />
+
+    <!-- 原底部图标隐藏，避免 ClassCast；品牌文案用独立 TextView -->
+    <ImageView
+        android:id="@id/imageView"
+        android:visibility="gone"
+        android:layout_width="50.0dp"
+        android:layout_height="50.0dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@id/tv_splash_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48.0dp"
+        android:text="@string/splash_brand"
+        android:textColor="#666666"
+        android:textSize="14.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
