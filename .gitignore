@@ -3,5 +3,6 @@
 *.idsig
 apktool/build/
 apktool/dist/
+dist/
 .DS_Store
 Thumbs.db

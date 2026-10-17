@@ -20,6 +20,7 @@ Android 虚拟定位 / Mock Location 工具。
 | --- | --- |
 | [`apktool/`](apktool/) | apktool 可重建工程（smali + 资源） |
 | [`scripts/build.ps1`](scripts/build.ps1) | Windows 一键构建并签名 |
+| [`.github/workflows/build.yml`](.github/workflows/build.yml) | GitHub Actions：apktool 3.0.2 构建并用 Debug 证书签名 |
 | [Releases](https://github.com/flower1201/shuguang/releases) | 预构建 APK |
 
 公开源码中的地图 / 广告 Key 已替换为占位符，构建前请填入你自己的密钥：
@@ -50,6 +51,8 @@ java -jar uber-apk-signer.jar --apks shuguang-unsigned.apk --out dist/
 ```
 
 安装前如遇签名冲突，先卸载旧版。当前 Release 使用 Android Debug 证书（v2/v3）。
+
+推送到 `main` 后，Actions 会用同样的 Debug 证书打出产物 `shuguang-debug-apk`（占位 API Key，仅用于确认工程能编过）。正式分发请换自己的签名证书。
 
 ## 安装说明
 
