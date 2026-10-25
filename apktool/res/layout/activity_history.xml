@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/sg_canvas">
     <LinearLayout android:orientation="horizontal" android:id="@id/llSearchLinear" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <SearchView android:layout_gravity="end|bottom" android:id="@id/searchView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5.0dp" android:iconifiedByDefault="true" android:queryHint="请输入搜索内容" />
+        <SearchView android:layout_gravity="end|bottom" android:id="@id/searchView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5.0dp" android:iconifiedByDefault="true" android:queryHint="请输入搜索内容" android:fontFamily="sans-serif" />
     </LinearLayout>
-    <TextView android:textSize="17.0sp" android:layout_gravity="center" android:id="@id/tvrecordNull" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/history_idle" android:textAlignment="center" />
-    <ListView android:id="@id/lvRecord" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="15sp" android:layout_gravity="center" android:id="@id/tvrecordNull" android:padding="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/history_idle" android:textAlignment="center" android:fontFamily="sans-serif" android:textColor="@color/sg_muted" android:lineSpacingExtra="6dp" />
+    <ListView android:id="@id/lvRecord" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/sg_line" android:dividerHeight="1dp" android:clipToPadding="false" android:paddingTop="8dp" android:paddingBottom="16dp" />
 </LinearLayout>

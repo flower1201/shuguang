@@ -1733,6 +1733,8 @@
 .method protected initView()V
     .locals 3
 
+    invoke-static {p0}, Lcom/mm/app/loaction/route/RouteEntry;->install(Landroid/app/Activity;)V
+
     .line 88
     invoke-virtual {p0}, Lcom/mm/app/loaction/application/ui/MapsActivity;->get_binding()Landroidx/viewbinding/ViewBinding;
 

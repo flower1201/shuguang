@@ -6,3 +6,5 @@ apktool/dist/
 dist/
 .DS_Store
 Thumbs.db
+.tools/
+.build/

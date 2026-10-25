@@ -25,6 +25,14 @@ jobs:
           curl -fsSL -o "$RUNNER_TEMP/tools/uber-apk-signer.jar" \
             https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar
 
+      - name: Compile trajectory extension
+        shell: pwsh
+        run: ./scripts/build-route.ps1
+
+      - name: Check trajectory movement
+        shell: pwsh
+        run: ./scripts/test-route.ps1
+
       - name: Build and sign
         run: |
           mkdir -p dist

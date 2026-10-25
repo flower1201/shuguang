@@ -2281,6 +2281,10 @@
     .line 180
     invoke-virtual {p0}, Lcom/mm/app/loaction/application/ui/MainHomeActivity;->locationAndContactsTask()V
 
+    sget-wide v0, Lcom/mm/app/loaction/application/ui/MainHomeActivity;->mCurLat:D
+    sget-wide v2, Lcom/mm/app/loaction/application/ui/MainHomeActivity;->mCurLng:D
+    invoke-static {p0, v0, v1, v2, v3}, Lcom/mm/app/loaction/route/RouteEntry;->install(Landroid/app/Activity;DD)V
+
     return-void
 .end method
 

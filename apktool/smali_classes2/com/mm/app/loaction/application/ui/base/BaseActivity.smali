@@ -164,6 +164,8 @@
     .line 26
     invoke-virtual {p0}, Lcom/mm/app/loaction/application/ui/base/BaseActivity;->initView()V
 
+    invoke-static {p0}, Lcom/mm/app/loaction/route/UiStyles;->applyChrome(Landroid/app/Activity;)V
+
     return-void
 .end method
 

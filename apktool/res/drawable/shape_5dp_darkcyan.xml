@@ -1,11 +1,2 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <stroke android:width="0.5dp" android:color="@color/deepskyblue" />
-            <gradient android:startColor="@color/darkcyan" android:endColor="@color/darkcyan" android:angle="270.0" android:centerColor="@color/teal" />
-            <corners android:radius="5.0dp" />
-        </shape>
-    </item>
-</selector>
+<?xml version="1.0" encoding="utf-8"?><ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#24237968"><item>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle"><solid android:color="@color/sg_accent"/><corners android:radius="12dp"/></shape></item></ripple>

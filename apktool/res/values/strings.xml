@@ -40,8 +40,8 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
     <string name="attachment_title">Download incoming attachments</string>
-    <string name="baidumap">百度地图穿越版</string>
-    <string name="baidumap_hint">中国地图详细版本,强大功能,选择本选项开始阳光跑</string>
+    <string name="baidumap">百度地图</string>
+    <string name="baidumap_hint">查看国内地图，搜索地点与模拟位置</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
     <string name="cancel">取消</string>
@@ -75,7 +75,7 @@
     <string name="confirm">确定</string>
     <string name="copy">Copy</string>
     <string name="copy_shear_plate">已复制到剪切板</string>
-    <string name="current_value">\"当前值: \"</string>
+    <string name="current_value">当前值：</string>
     <string name="default_info_snippet">No places found, because location permission is disabled.</string>
     <string name="default_info_title">Default Location</string>
     <string name="del_succ">删除成功!</string>
@@ -90,8 +90,8 @@
     <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="go_close">去关闭</string>
-    <string name="goog_map_hint">你可以穿越全世界任何一个地方</string>
-    <string name="google_map">谷歌地图世界版本</string>
+    <string name="goog_map_hint">浏览世界地图，选择你想去的位置</string>
+    <string name="google_map">Google 地图</string>
     <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="hint">提示</string>
     <string name="history_idle">暂无历史记录</string>

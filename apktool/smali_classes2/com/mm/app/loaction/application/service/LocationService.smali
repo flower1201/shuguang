@@ -55,6 +55,8 @@
 
 .field private mSpeed:D
 
+.field private mRouteBearing:F
+
 
 # direct methods
 .method static bridge synthetic -$$Nest$fgetisStop(Lcom/mm/app/loaction/application/service/LocationService;)Z
@@ -725,6 +727,8 @@
     invoke-virtual {v1, v3, v4}, Landroid/location/Location;->setAltitude(D)V
 
     .line 241
+    iget v2, p0, Lcom/mm/app/loaction/application/service/LocationService;->mRouteBearing:F
+
     invoke-virtual {v1, v2}, Landroid/location/Location;->setBearing(F)V
 
     .line 242
@@ -813,9 +817,9 @@
     .line 291
     invoke-virtual {v1, v2, v3}, Landroid/location/Location;->setAltitude(D)V
 
-    const/high16 v2, 0x3f800000    # 1.0f
-
     .line 292
+    iget v2, p0, Lcom/mm/app/loaction/application/service/LocationService;->mRouteBearing:F
+
     invoke-virtual {v1, v2}, Landroid/location/Location;->setBearing(F)V
 
     .line 293
@@ -870,6 +874,29 @@
 
 
 # virtual methods
+.method public applyRouteTick()V
+    .locals 4
+
+    invoke-static {}, Lcom/mm/app/loaction/route/RouteController;->nextLocation()[D
+    move-result-object v0
+    if-eqz v0, :route_tick_done
+    const/4 v1, 0x0
+    aget-wide v2, v0, v1
+    iput-wide v2, p0, Lcom/mm/app/loaction/application/service/LocationService;->mCurLng:D
+    const/4 v1, 0x1
+    aget-wide v2, v0, v1
+    iput-wide v2, p0, Lcom/mm/app/loaction/application/service/LocationService;->mCurLat:D
+    const/4 v1, 0x2
+    aget-wide v2, v0, v1
+    iput-wide v2, p0, Lcom/mm/app/loaction/application/service/LocationService;->mSpeed:D
+    const/4 v1, 0x3
+    aget-wide v2, v0, v1
+    double-to-float v2, v2
+    iput v2, p0, Lcom/mm/app/loaction/application/service/LocationService;->mRouteBearing:F
+    :route_tick_done
+    return-void
+.end method
+
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
@@ -923,6 +950,8 @@
 .method public onDestroy()V
     .locals 3
 
+    invoke-static {}, Lcom/mm/app/loaction/route/RouteController;->serviceDestroyed()V
+
     const/4 v0, 0x1
 
     .line 111
@@ -967,6 +996,22 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 5
+
+    if-nez p1, :route_valid_intent
+    invoke-virtual {p0}, Lcom/mm/app/loaction/application/service/LocationService;->stopSelf()V
+    const/4 v0, 0x2
+    return v0
+
+    :route_valid_intent
+    const-string v0, "ROUTE_PLAYBACK"
+    const/4 v1, 0x0
+    invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+    move-result v0
+    if-nez v0, :route_start_ready
+    invoke-static {}, Lcom/mm/app/loaction/route/RouteController;->cancel()V
+    const-wide/16 v0, 0x0
+    iput-wide v0, p0, Lcom/mm/app/loaction/application/service/LocationService;->mSpeed:D
+    :route_start_ready
 
     const-string v0, "LNG_VALUE"
 

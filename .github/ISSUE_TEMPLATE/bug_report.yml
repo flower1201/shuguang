@@ -1,0 +1,28 @@
+name: 问题反馈 / Bug report
+description: 帮助定位应用、地图或轨迹问题。
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 应用版本 / App version
+      placeholder: '例如：1.3，Release APK 或自行构建'
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 设备与 Android 版本 / Device and Android version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      description: 说明操作步骤、预期表现与实际表现。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 截图或日志 / Screenshots or logs
+      description: 请移除个人位置、账号信息、API Key 等敏感信息。

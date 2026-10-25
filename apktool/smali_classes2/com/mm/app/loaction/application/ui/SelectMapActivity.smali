@@ -148,46 +148,7 @@
 .method protected initView()V
     .locals 2
 
-    .line 24
-    move-object v0, p0
-
-    check-cast v0, Landroidx/fragment/app/FragmentActivity;
-
-    invoke-static {v0}, Lcom/bumptech/glide/Glide;->with(Landroidx/fragment/app/FragmentActivity;)Lcom/bumptech/glide/RequestManager;
-
-    move-result-object v0
-
-    .line 25
-    invoke-virtual {v0}, Lcom/bumptech/glide/RequestManager;->asGif()Lcom/bumptech/glide/RequestBuilder;
-
-    move-result-object v0
-
-    const-string v1, "file:///android_asset/googlemap.gif"
-
-    .line 26
-    invoke-virtual {v0, v1}, Lcom/bumptech/glide/RequestBuilder;->load(Ljava/lang/String;)Lcom/bumptech/glide/RequestBuilder;
-
-    move-result-object v0
-
-    .line 31
-    sget-object v1, Lcom/bumptech/glide/load/engine/DiskCacheStrategy;->NONE:Lcom/bumptech/glide/load/engine/DiskCacheStrategy;
-
-    invoke-virtual {v0, v1}, Lcom/bumptech/glide/RequestBuilder;->diskCacheStrategy(Lcom/bumptech/glide/load/engine/DiskCacheStrategy;)Lcom/bumptech/glide/request/BaseRequestOptions;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/bumptech/glide/RequestBuilder;
-
-    .line 32
-    invoke-virtual {p0}, Lcom/mm/app/loaction/application/ui/SelectMapActivity;->get_binding()Landroidx/viewbinding/ViewBinding;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/mm/app/loaction/databinding/ActivitySelectMainBinding;
-
-    iget-object v1, v1, Lcom/mm/app/loaction/databinding/ActivitySelectMainBinding;->ivGoogleMap:Landroid/widget/ImageView;
-
-    invoke-virtual {v0, v1}, Lcom/bumptech/glide/RequestBuilder;->into(Landroid/widget/ImageView;)Lcom/bumptech/glide/request/target/ViewTarget;
+    invoke-static {p0}, Lcom/mm/app/loaction/route/RouteEntry;->install(Landroid/app/Activity;)V
 
     .line 34
     invoke-virtual {p0}, Lcom/mm/app/loaction/application/ui/SelectMapActivity;->get_binding()Landroidx/viewbinding/ViewBinding;

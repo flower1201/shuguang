@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="sg_canvas">#F5F6F2</color><color name="sg_surface">#FFFFFF</color>
+ <color name="sg_ink">#20332F</color><color name="sg_muted">#64756E</color>
+ <color name="sg_accent">#237968</color><color name="sg_soft">#E8F2ED</color><color name="sg_line">#DDE5DE</color>
+ <style name="Shuguang.ActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+  <item name="background">@color/sg_surface</item><item name="elevation">0dp</item>
+  <item name="titleTextStyle">@style/Shuguang.ActionBarTitle</item>
+ </style>
+ <style name="Shuguang.ActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+  <item name="android:textColor">@color/sg_ink</item><item name="android:fontFamily">sans-serif-medium</item><item name="android:textSize">20sp</item>
+ </style>
+ <style name="Shuguang.RouteTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+  <item name="android:alertDialogTheme">@style/Shuguang.NativeDialog</item>
+  <item name="android:colorAccent">@color/sg_accent</item><item name="android:fontFamily">sans-serif</item>
+  <item name="android:windowLightStatusBar">true</item><item name="android:statusBarColor">@color/sg_canvas</item>
+  <item name="android:navigationBarColor">@color/sg_surface</item><item name="android:windowLightNavigationBar">true</item>
+  <item name="android:windowBackground">@color/sg_canvas</item><item name="android:textColorPrimary">@color/sg_ink</item>
+  <item name="android:textColorSecondary">@color/sg_muted</item><item name="android:colorControlHighlight">#24237968</item>
+ </style>
+ <style name="Shuguang.NativeDialog" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+  <item name="android:fontFamily">sans-serif</item><item name="android:colorAccent">@color/sg_accent</item>
+  <item name="android:textColorPrimary">@color/sg_ink</item><item name="android:textColorSecondary">@color/sg_muted</item>
+  <item name="android:windowBackground">@drawable/sg_surface</item><item name="android:backgroundDimAmount">0.32</item>
+ </style>
+ <style name="Shuguang.Dialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+  <item name="android:fontFamily">sans-serif</item><item name="colorAccent">@color/sg_accent</item>
+  <item name="android:textColorPrimary">@color/sg_ink</item><item name="android:textColorSecondary">@color/sg_muted</item>
+  <item name="android:windowBackground">@drawable/sg_surface</item><item name="android:backgroundDimAmount">0.32</item>
+ </style>
+</resources>

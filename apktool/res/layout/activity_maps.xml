@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:background="?colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:popupTheme="@style/AppTheme.PopupOverlay" app:title="@string/google_map" />
+<?xml version='1.0' encoding='utf-8'?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:background="@color/sg_surface" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0dp" app:elevation="0dp">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/sg_surface" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:popupTheme="@style/AppTheme.PopupOverlay" app:title="@string/google_map" android:elevation="0dp" app:titleTextColor="@color/sg_ink" app:subtitleTextColor="@color/sg_muted" />
     </com.google.android.material.appbar.AppBarLayout>
     <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/map" android:layout_width="match_parent" android:layout_height="match_parent" />
-        <ImageView android:id="@id/faBtnStart" android:background="@drawable/shape_allround_gray_cccccc" android:padding="10.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_margin="40.0dp" android:src="@drawable/ic_position" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/faBtnStart" android:background="@drawable/sg_tool" android:padding="12dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_margin="24dp" android:src="@drawable/ic_position" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="开始或停止模拟定位" />
     </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

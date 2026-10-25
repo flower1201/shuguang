@@ -23,13 +23,19 @@
         <item name="android:activityCloseExitAnimation">@anim/out_translate_right</item>
     </style>
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/sg_surface</item>
         <item name="buttonStyle">@style/AppTheme.Button</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
+    <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowBackground">@color/sg_canvas</item>
+        <item name="android:textColorPrimary">@color/sg_ink</item><item name="android:textColorSecondary">@color/sg_muted</item>
+        <item name="android:colorAccent">@color/sg_accent</item><item name="android:navigationBarColor">@color/sg_surface</item>
+        <item name="android:windowLightNavigationBar">true</item><item name="android:windowLightStatusBar">true</item>
+        <item name="alertDialogTheme">@style/Shuguang.Dialog</item><item name="actionBarStyle">@style/Shuguang.ActionBar</item><item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Light</item>
     </style>
-    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
     <style name="AppTheme.Button" parent="@style/Widget.AppCompat.Button.Colored">
         <item name="colorButtonNormal">@color/colorAccent</item>
     </style>

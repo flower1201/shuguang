@@ -58,6 +58,8 @@
 .method public setPosition(DD)V
     .locals 2
 
+    invoke-static {}, Lcom/mm/app/loaction/route/RouteController;->cancel()V
+
     .line 323
     iget-object v0, p0, Lcom/mm/app/loaction/application/service/LocationService$ServiceGoBinder;->this$0:Lcom/mm/app/loaction/application/service/LocationService;
 

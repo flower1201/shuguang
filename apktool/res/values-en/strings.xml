@@ -11,8 +11,8 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
     <string name="attachment_title">Download incoming attachments</string>
-    <string name="baidumap">Baidu map</string>
-    <string name="baidumap_hint">Chinese map detailed version, powerful features, select the king community you want</string>
+    <string name="baidumap">Baidu Maps</string>
+    <string name="baidumap_hint">Detailed maps and places in China.</string>
     <string name="cancel">Cancel</string>
     <string name="click_left_location_hint">Click on the lower left corner to simulate location</string>
     <string name="click_map_hint">Please click on map location or search location</string>
@@ -20,7 +20,7 @@
     <string name="complete">Skip</string>
     <string name="confirm">Confirm</string>
     <string name="copy_shear_plate">Copied to shear plate</string>
-    <string name="current_value">\" Current value: \"</string>
+    <string name="current_value">Current value: </string>
     <string name="default_info_snippet">No places found, because location permission is disabled.</string>
     <string name="default_info_title">Default Location</string>
     <string name="del_succ">Deleted successfully!</string>
@@ -30,8 +30,8 @@
     <string name="developer_hint">cannot jump to developer options, please make sure your device is in developer mode</string>
     <string name="enter_latitude_longitude">Please enter latitude and longitude</string>
     <string name="go_close">to close</string>
-    <string name="goog_map_hint">You can travel anywhere in the world</string>
-    <string name="google_map">Google Maps World Edition</string>
+    <string name="goog_map_hint">Explore locations around the world.</string>
+    <string name="google_map">Google Maps</string>
     <string name="hint">prompt</string>
     <string name="history_idle">No history</string>
     <string name="home_exit_hint">Press again to exit the application</string>
@@ -56,8 +56,8 @@
     <string name="location_start">Simulated location started</string>
     <string name="location_start_hint">Click on map location or search location</string>
     <string name="location_title">Simulated location</string>
-    <string name="map_pic_normal">Ordinary graph</string>
-    <string name="map_pic_sate">satellite map</string>
+    <string name="map_pic_normal">Standard</string>
+    <string name="map_pic_sate">Satellite</string>
     <string name="messages_header">Messages</string>
     <string name="msg_error">No specified content found</string>
     <string name="nav_menu_dev">Developer options</string>

@@ -53,6 +53,8 @@
     .line 191
     iget-object p1, p0, Lcom/mm/app/loaction/application/service/LocationService$2;->this$0:Lcom/mm/app/loaction/application/service/LocationService;
 
+    invoke-virtual {p1}, Lcom/mm/app/loaction/application/service/LocationService;->applyRouteTick()V
+
     invoke-static {p1}, Lcom/mm/app/loaction/application/service/LocationService;->-$$Nest$msetLocationNetwork(Lcom/mm/app/loaction/application/service/LocationService;)V
 
     .line 192

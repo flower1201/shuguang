@@ -156,16 +156,24 @@
 .end method
 
 .method static synthetic lambda$onCreatePreferences$12(Landroidx/preference/EditTextPreference;)Ljava/lang/CharSequence;
-    .locals 2
+    .locals 3
 
     .line 114
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v1, 0x7f11004b
+    invoke-virtual {p0}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v1
+
+    const v2, 0x7f11004b
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -229,16 +237,24 @@
 .end method
 
 .method static synthetic lambda$onCreatePreferences$5(Landroidx/preference/EditTextPreference;)Ljava/lang/CharSequence;
-    .locals 2
+    .locals 3
 
     .line 62
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v1, 0x7f11004b
+    invoke-virtual {p0}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v1
+
+    const v2, 0x7f11004b
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -280,16 +296,24 @@
 .end method
 
 .method static synthetic lambda$onCreatePreferences$8(Landroidx/preference/EditTextPreference;)Ljava/lang/CharSequence;
-    .locals 2
+    .locals 3
 
     .line 78
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v1, 0x7f11004b
+    invoke-virtual {p0}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v1
+
+    const v2, 0x7f11004b
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

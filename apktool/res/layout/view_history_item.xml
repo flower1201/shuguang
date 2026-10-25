@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvLocationID" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tvLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
-    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvWGSLatLng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
-    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/tvBDLatLng" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp" android:background="@color/sg_surface" android:minHeight="96dp">
+    <TextView android:textSize="14.0sp" android:textColor="@color/sg_ink" android:id="@id/tvLocationID" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+    <TextView android:textSize="17sp" android:textColor="@color/sg_ink" android:id="@id/tvLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+    <TextView android:textSize="12sp" android:textColor="@color/sg_muted" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:fontFamily="sans-serif" />
+    <TextView android:textSize="12sp" android:textColor="@color/sg_muted" android:id="@id/tvWGSLatLng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:fontFamily="monospace" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/sg_ink" android:id="@id/tvBDLatLng" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
 </LinearLayout>

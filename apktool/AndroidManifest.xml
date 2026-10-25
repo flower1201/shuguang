@@ -38,11 +38,12 @@
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <meta-data android:name="com.google.android.geo.API_KEY" android:value="YOUR_GOOGLE_MAPS_API_KEY"/>
         <activity android:exported="true" android:name="com.mm.app.loaction.application.ui.MapsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:exported="false" android:name="com.mm.app.loaction.application.ui.SettingsActivity"/>
+        <activity android:exported="false" android:label="@string/nav_menu_settings" android:name="com.mm.app.loaction.application.ui.SettingsActivity"/>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="YOUR_BAIDU_LBS_API_KEY"/>
         <service android:enabled="true" android:exported="false" android:name="com.baidu.location.f" android:process=":remote"/>
-        <service android:exported="false" android:name="com.mm.app.loaction.application.service.LocationService"/>
+        <service android:exported="false" android:foregroundServiceType="location" android:name="com.mm.app.loaction.application.service.LocationService"/>
+        <activity android:exported="false" android:name="com.mm.app.loaction.route.RouteActivity" android:screenOrientation="portrait" android:theme="@style/Shuguang.RouteTheme" android:windowSoftInputMode="adjustResize"/>
         <provider android:authorities="com.mm.app.ybwwlkj.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
         </provider>
@@ -55,7 +56,8 @@
         </activity>
         <activity android:exported="false" android:launchMode="singleTask" android:name="com.mm.app.loaction.application.ui.MainHomeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:exported="false" android:label="@string/app_history" android:name="com.mm.app.loaction.application.ui.HistoryActivity"/>
-        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX"/>
+        <!-- Google's public sample App ID keeps development builds launchable. Replace before distribution. -->
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3940256099942544~3347511713"/>
         <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
         <activity android:exported="false" android:label="" android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" android:theme="@style/EasyPermissions.Transparent"/>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
