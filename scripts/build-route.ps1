@@ -24,8 +24,8 @@ if (-not $r8) { throw 'D8 not found. Install Android cmdline-tools or build-tool
 function Get-RouteArtifact([string]$Relative, [string]$Name) {
     $destination = Join-Path $cache $Name
     if (-not (Test-Path -LiteralPath $destination) -or (Get-Item -LiteralPath $destination).Length -eq 0) {
-        $curl = Get-Command curl.exe -ErrorAction SilentlyContinue
-        if (-not $curl) { $curl = Get-Command curl -CommandType Application -ErrorAction Stop }
+        $curl = Get-Command curl.exe -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1
+        if (-not $curl) { $curl = Get-Command curl -CommandType Application -ErrorAction Stop | Select-Object -First 1 }
         & $curl.Source --fail --silent --show-error --location --retry 2 --max-time 120 ('https://repo.maven.apache.org/maven2/' + $Relative) --output $destination
         if ($LASTEXITCODE -ne 0) { throw "Download failed: $Name" }
     }
